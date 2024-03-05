@@ -2,6 +2,15 @@
 
 Developer Challenge for Space Force
 
+## Project Demo
+[Space Force Developer Challenge](https://derankin.github.io/space-force-developer-challenge/)
+
+### Local Config
+`
+application will be located at http://localhost:{port}/space-force-developer-challenge
+after you run npm run dev
+`
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
@@ -23,6 +32,8 @@ npm run dev
 ```sh
 npm run build
 ```
+
+
 
 
 
