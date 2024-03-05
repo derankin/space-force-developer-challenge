@@ -106,12 +106,12 @@ const types = ref<TypeOptions>({
 
 
 
-const selectedCategory = ref('')
-const selectedTypes = ref<string[]>([])
-const files = ref<FileItem[]>([])
-const submitted = ref(false);
-const subject = ref("")
-const description = ref("")
+let selectedCategory = ref('')
+let selectedTypes = ref<string[]>([])
+let files = ref<FileItem[]>([])
+let submitted = ref(false);
+let subject = ref("")
+let description = ref("")
 
 
 let fileCount = 0
@@ -137,6 +137,12 @@ function clearForm() {
   console.log('clear form')
   fileCount = 0
   submitted.value = false
+  selectedCategory = ref('')
+  selectedTypes = ref<string[]>([])
+  files = ref<FileItem[]>([])
+  submitted = ref(false);
+  subject = ref("")
+  description = ref("")
   emit('close')
 }
 
@@ -155,6 +161,13 @@ function submitForm() {
   submitted.value = true
   // Validations then send to server
   console.log('submitted')
+  console.log('Category:', selectedCategory.value)
+  console.log('Types:', selectedTypes.value)
+  console.log('Subject:', subject.value)
+  console.log('Description:', description.value)
+  console.log('File Count',fileCount)
+  console.log('Files:', files.value)
+
 }
 
 </script>
