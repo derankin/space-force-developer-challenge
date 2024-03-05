@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/spaceforce-developer-challenge',
+  base: '/space-force-developer-challenge',
   plugins: [
     vue(),
   ],
